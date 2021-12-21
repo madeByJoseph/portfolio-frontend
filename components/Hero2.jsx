@@ -30,7 +30,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle } ) => {
         <Grid
           container
           alignItems="center"
-          
+          justifyContent="end"
           
 
         ><Grid item xs="8">

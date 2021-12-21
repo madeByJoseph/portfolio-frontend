@@ -8,9 +8,9 @@ const Homepage = () => {
       <Hero
         imgSrc="/hero-dark-code.jpg"
         imgAlt="out of focus and blurry text on a dark background"
-        title="Hello"
-        subtitle=" my name is Joseph"
-        body="I'm an enthusiast developer &amp; underemployed individual"
+        title="Hello,"
+        subtitle="My name is Joseph Hall"
+        body="I'm an enthusiast developer with varying interests"
       />
     </>
 
