@@ -30,7 +30,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle } ) => {
         <Grid
           container
           alignItems="center"
-          justifyContent="end"
+          
           
 
         ><Grid item xs="8">
@@ -61,15 +61,12 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle } ) => {
   </Typography>
   </Grid>
     <Grid item xs="12">
-<Typography
+          <Typography
             component="p"
             variant="h5"
-
-    color='common.white'
-    sx={{
-      
-
-    }}
+            gutterBottom
+            color='common.white'
+  
   >
     {subtitle}
   </Typography>

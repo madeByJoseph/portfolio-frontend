@@ -1,10 +1,12 @@
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
-import ArrowDownward from "@mui/icons-material/ArrowDownward";
+import DownloadingIcon from '@mui/icons-material/Downloading';
+import Fab from "@mui/material/Fab";
 
 
-const Hero = ({ imgSrc, imgAlt, title, subtitle, body } ) => {
+
+const Hero = ({ imgSrc, imgAlt, title, subtitle } ) => {
   return (
     <Grid
         component="section"
@@ -35,8 +37,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle, body } ) => {
           alignItems="center"
         >
           <Typography
-            variant="h2"
-            
+            variant="h1"
             sx={{
               color: "secondary.main",
               fontWeight: 250,
@@ -46,30 +47,42 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle, body } ) => {
           </Typography>
           <Typography
             component="p"
-            variant="h5"
+            variant="h3"
+            gutterBottom
             color="common.white"
             sx={{
-
+              mt:5,
             }}
           >
             {subtitle}
           </Typography>
-          <Typography
-            component="p"
-            variant="h6"
-            color="common.white"
-            sx={{
-              mb: 10,
-            }}
-          >
-            {body}
-          </Typography>
-          <Typography component="p" variant="h6" color="secondary" gutterBottom>
-           scroll for more
-          </Typography>
-          
         </Grid>
+        <Grid
+          container
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Fab
+              justify="center"
+              aria-label="scroll down"
+              sx={{
+                position: "static",
+                bottom: 50,
+                mb: 10,
+              }}
+              style={{backgroundColor: "transparent"}}
+            >
+               <DownloadingIcon fontSize="large" color="secondary" />
+            </Fab>
+        </Grid>
+       
+            
+
       </Grid>
+
+      
     </Grid>
   );
 }
